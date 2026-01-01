@@ -3,6 +3,7 @@
 }
 
 .calender-container {
+    padding: 5px;
 
     .calender-navigator {
         display: flex;
@@ -49,6 +50,7 @@
     .calender-body {
         font-weight: light;
         font-size: xx-large;
+        padding: 5px;
 
         .week-body {
             display: grid;
