@@ -23,10 +23,10 @@ var generateCalender = (y, m) => {
       : (cal_Dates.innerHTML += `<div class="month-date">${d}</div>`);
   }
 
-  m_Name.textContent = new Date(y, m + 1, 1)
+  m_Name.textContent = new Date(y, m+1, 0)
     .toLocaleString(0, { month: "long" })
     .toUpperCase();
-  y_Dsp.textContent = new Date(y, m + 1, 1).toLocaleString(0, {
+  y_Dsp.textContent = new Date(y, m + 1, 0).toLocaleString(0, {
     year: "numeric",
   });
 };
@@ -34,11 +34,11 @@ var generateCalender = (y, m) => {
 generateCalender(y_No, m_No);
 
 p_Month.onclick = () => {
-  m_No--;
+  m_No--
   generateCalender(y_No, m_No);
 };
 
 n_Month.onclick = () => {
-  m_No++;
+  m_No++
   generateCalender(y_No, m_No);
 };

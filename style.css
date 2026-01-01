@@ -5,48 +5,103 @@
 .calender-container {
 
     .calender-navigator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
 
         .button-group {
+            margin-right: auto;
 
             #prev_Month{
+                
+                height: 36px;
+                width: 36px;
 
+            }
+
+            #next_Month{
+                height: 36px;
+                width: 36px;
             }
         }
 
         #month_Name {
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            font-weight: bold;
+            cursor: pointer;
         }
 
         #year_Display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            font-weight: bold;
+            cursor: pointer;
 
         }
     }
 
     .calender-body {
+        font-weight: light;
+        font-size: xx-large;
 
         .week-body {
             display: grid;
-            grid-template-columns: repeat(7, auto);
+            grid-template-columns: repeat(7, 1fr);
+            background: gray;
 
             .day-name {
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 70px;
+                padding: 5px;
+                
+                
             }
 
             .weekend {
-
+                color: red;
+                
             }
         }
 
         .calender-dates {
             display: grid;
-            grid-template-columns: repeat(7, auto);
+            grid-template-columns: repeat(7, 1fr);
+            background: blueviolet;
 
             .dummy-date {
-
+                opacity: .1;
             }
 
             .month-date {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 70px;
+                padding: 5px;
+                
 
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.5;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    transform: scale(1);
+                    transition: border transform 5ms ease;
+                }
+            }
+
+            .current-date {
+                color: rgb(222, 222, 230);
             }
         }
     }
