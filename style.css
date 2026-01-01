@@ -1,0 +1,53 @@
+* {
+    font-family: Poppins,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calender-container {
+
+    .calender-navigator {
+
+        .button-group {
+
+            #prev_Month{
+
+            }
+        }
+
+        #month_Name {
+
+        }
+
+        #year_Display {
+
+        }
+    }
+
+    .calender-body {
+
+        .week-body {
+            display: grid;
+            grid-template-columns: repeat(7, auto);
+
+            .day-name {
+
+            }
+
+            .weekend {
+
+            }
+        }
+
+        .calender-dates {
+            display: grid;
+            grid-template-columns: repeat(7, auto);
+
+            .dummy-date {
+
+            }
+
+            .month-date {
+
+            }
+        }
+    }
+}
